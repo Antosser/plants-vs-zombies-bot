@@ -6,7 +6,7 @@ from os import system
 import threading
 
 def clicker(a, b, c, d):
-	system(f'C:\\Users\\Antosser-PC\\Desktop\\python\\pvz\\pvz-ls-hack-clicker.exe 0 {a} {b} {c} {d}')
+	system(f'.\\pvz-ls-hack-clicker.exe 0 {a} {b} {c} {d}')
 
 if 1:
 	print('Waiting for input...')
@@ -21,7 +21,7 @@ if 1:
 	xgap = round(abs(topleft[0] - bottomright[0]) / 7)
 	ygap = round(abs(topleft[1] - bottomright[1]) / 5)
 	print(f'{xgap=}, {ygap=}')
-	system(f'C:\\Users\\Antosser-PC\\Desktop\\python\\pvz\\pvz-ls-hack-clicker.exe 2 0 0 0 {topleft[0]} {topleft[1]} {xgap} {ygap}')
+	system(f'.\\pvz-ls-hack-clicker.exe 2 0 0 0 {topleft[0]} {topleft[1]} {xgap} {ygap}')
 	pyautogui.moveTo(topleft[0] + xgap * 3, topleft[1] + ygap * 5.8)
 	time.sleep(.1)
 	pyautogui.click()
@@ -47,7 +47,7 @@ if 1:
 	bottomright2 = pyautogui.position()
 	xgap2 = round(abs(topleft2[0] - bottomright2[0]) / 8)
 	ygap2 = round(abs(topleft2[1] - bottomright2[1]) / 5)
-	gap = round(abs(left[0] - right[0]) / 7)
+	gap = round(abs(left[0] - right[0]) / 3)
 	p1 = (left[0] + gap * 0, left[1])
 	p2 = (left[0] + gap * 1, left[1])
 	p3 = (left[0] + gap * 2, left[1])
@@ -96,12 +96,12 @@ else:
 	k3=(747, 705)
 	keyboard.wait('insert')
 while True:
-	system(f'C:\\Users\\Antosser-PC\\Desktop\\python\\pvz\\pvz-ls-hack-clicker.exe 2 0 0 0 {topleft[0]} {topleft[1]} {xgap} {ygap}')
+	system(f'.\\pvz-ls-hack-clicker.exe 2 0 0 0 {topleft[0]} {topleft[1]} {xgap} {ygap}')
 	pyautogui.moveTo(topleft[0] + xgap * 3, topleft[1] + ygap * 5.8)
 	#time.sleep(.1)
 	pyautogui.click()
 	time.sleep(2.3)
-	system(f'C:\\Users\\Antosser-PC\\Desktop\\python\\pvz\\pvz-ls-hack-clicker.exe 1 {left[0]} {left[1]} {gap} {topleft2[0]} {topleft2[1]} {xgap2} {ygap2}')
+	system(f'.\\pvz-ls-hack-clicker.exe 1 {left[0]} {left[1]} {gap} {topleft2[0]} {topleft2[1]} {xgap2} {ygap2}')
 	pyautogui.moveTo(topleft2[0] + xgap2 * 4, topleft2[1] + ygap2 * 5.5)
 	#time.sleep(.1)
 	pyautogui.click()

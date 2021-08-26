@@ -8,7 +8,7 @@ import threading
 def clicker(a, b, c, d):
 	system(f'C:\\Users\\Antosser-PC\\Desktop\\python\\pvz\\pvz-ls-hack-clicker.exe 0 {a} {b} {c} {d}')
 
-if 0:
+if 1:
 	print('Waiting for input...')
 	keyboard.wait('insert')
 	print('1')
